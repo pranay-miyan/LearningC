@@ -8,7 +8,7 @@
 int our_random_function(int max) {
     int x;
     
-    x = rand() % max++; // 
+    x = rand() % max++; // max is upperbound of max value
     return x;
 }
 
@@ -16,7 +16,7 @@ int main() {
     int random;
 
     srand(getpid()); // getpid = processes count
-    random = our_random_function(5);
+    random = our_random_function(5); // random numb till 5
     printf("%d\n", random);
 
     random = our_random_function(10);
