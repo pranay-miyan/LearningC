@@ -4,13 +4,20 @@
 
 
 int main() {
-     int svalue = 10;
+     int svalue = 6;
 
-     while (svalue >= 0) 
+     while (1) 
      {
+        svalue--; 
+        if (svalue == 3)
+            continue; //ignore that value above
         printf("%d\n", svalue); 
         sleep(1);
-        svalue--; 
+        
+
+        if (svalue < 1) { 
+            break;
+        }
      }    
   
     return 0;
