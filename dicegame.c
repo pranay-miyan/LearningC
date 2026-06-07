@@ -10,7 +10,7 @@
 int main () {
     int guess = 0, balance = 1000, userbet = 1;
     
-    printf("LALIT : %d\n", userbet);
+    printf("%d\n", userbet);
     int test = rand() % 6 + 1;
 
     printf("How much do you want to bet?\n");
