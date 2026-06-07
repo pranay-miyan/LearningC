@@ -6,12 +6,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main () {
-    int guess = 0, balance = 1000, userbet = 1;
-    
+    int guess = 0, balance = 1000, userbet = 0;
+    srand(time(NULL)); //srand sets seed, time counts s since 1970s
+
     printf("%d\n", userbet);
     int test = rand() % 6 + 1;
+    printf("%d\n", test);
 
     printf("How much do you want to bet?\n");
     scanf("%d", &userbet);
@@ -32,7 +35,7 @@ int main () {
         }
 
     } else {
-        printf("Not enough sufficient money...\n");
+        printf("Not enough sufficient money... - %d \n");
         balance = userbet + balance;
     }
     
