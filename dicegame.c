@@ -16,7 +16,7 @@ int main () {
     int test = rand() % 6 + 1;
     printf("%d\n", test);
 
-    printf("How much do you want to bet?\n");
+    printf("How much do you want to bet??\n");
     scanf("%d", &userbet);
     
     if (userbet <= balance ) {
